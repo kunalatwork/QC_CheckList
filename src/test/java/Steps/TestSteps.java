@@ -85,17 +85,31 @@ public class TestSteps {
 
 		js.executeScript("arguments[0].scrollIntoView();",a );
 		a.click();
-		Thread.sleep(3000);
+		Thread.sleep(5000);
+		
+//		driver.navigate().to("https://accounts.google.com/signin");
+//		Thread.sleep(2000);
+//		driver.findElement(By.xpath("//input[@id='identifierId']")).sendKeys("kunal.rawat@sia-digital.com");
+//		Thread.sleep(1000);
+//		driver.findElement(By.className("VfPpkd-vQzf8d")).click();
+//		Thread.sleep(1000);
+//		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("123456789");
+//		Thread.sleep(1000);
+//		driver.findElement(By.className("VfPpkd-vQzf8d")).click();
+//		Thread.sleep(4000);
+//		driver.findElement(By.xpath("//div[@aria-label='Refresh']//div[@class='asa']")).click();
+//		Thread.sleep(4000);
+		
 		driver.navigate().to("https://testingadvance.advancesfe.com/Home/Login");
 	}
 
-
+	
 
 	@Then("^Login through multiple users like REP/FLSM/SLSM/ADMIN$")
 	public void login_through_multiple_users_like_REP_FLSM_SLSM_ADMIN() throws Throwable {
 
 		// SLSM 
-
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@id='userImage']")).sendKeys("SalesManager@gmail.com");	
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@id='passwordImage']")).sendKeys("123456789");	
@@ -946,7 +960,7 @@ public class TestSteps {
 
 	@Then("^Check LRC$")
 	public void check_LRC() throws Throwable {
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);		
+		Thread.sleep(3000);		
 		driver.findElement(By.xpath("//img[@id='new_lrc_gray_icon']")).click();
 
 	}
