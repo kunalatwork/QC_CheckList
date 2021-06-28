@@ -35,7 +35,7 @@ public class TestSteps {
 
 		String browser = prop.getProperty("browser");
 		if(browser.equalsIgnoreCase("chrome")){
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\lakhan\\SiA-Digital\\Kiverno\\Drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\lakhan\\eclipse-workspace\\QC_Checklist\\Browser\\chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 
@@ -49,7 +49,7 @@ public class TestSteps {
 			driver = new EdgeDriver();
 		}
 
-		driver.get("https://testingadvance.advancesfe.com/");
+		driver.get("https://advancesfe.com/Home/Login");
 		driver.manage().window().maximize();
 	}
 
@@ -76,7 +76,7 @@ public class TestSteps {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//u[@onclick='forgotPassword();']")).click();
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//input[@id=' ']")).sendKeys("kunal.rawat@sia-digital.com");
+		driver.findElement(By.xpath("//input[@id=' ']")).sendKeys("admin@healthcareinteraction.com");
 		driver.findElement(By.xpath("//input[@id='forgotSubmit']")).click();
 		Thread.sleep(3000);
 		JavascriptExecutor js = (JavascriptExecutor)driver; 
@@ -100,7 +100,7 @@ public class TestSteps {
 //		driver.findElement(By.xpath("//div[@aria-label='Refresh']//div[@class='asa']")).click();
 //		Thread.sleep(4000);
 		
-		driver.navigate().to("https://testingadvance.advancesfe.com/Home/Login");
+		driver.navigate().to("https://advancesfe.com/Home/Login");
 	}
 
 	
@@ -110,9 +110,9 @@ public class TestSteps {
 
 		// SLSM 
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//input[@id='userImage']")).sendKeys("SalesManager@gmail.com");	
+		driver.findElement(By.xpath("//input[@id='userImage']")).sendKeys("amit.tewary@sia-digital.com");	
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//input[@id='passwordImage']")).sendKeys("123456789");	
+		driver.findElement(By.xpath("//input[@id='passwordImage']")).sendKeys("12345@");	
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@id='loginSubmit']")).click();	
 		Thread.sleep(3000);
@@ -124,15 +124,15 @@ public class TestSteps {
 		a.click();
 		System.out.println(driver.getTitle() + " & User is on SLSM Dashboard");
 		Thread.sleep(4000);
-		driver.findElement(By.xpath("//a[@title='Logout']")).click();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.findElement(By.xpath("//a[@class='logout']")).click();
+//		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 
 		// FLSM 
-
-		driver.findElement(By.xpath("//input[@id='userImage']")).sendKeys("AnalyticManager@gmail.com");	
+		Thread.sleep(4000);
+		driver.findElement(By.xpath("//input[@id='userImage']")).sendKeys("hitesh.kumar@sia-digital.com");	
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//input[@id='passwordImage']")).sendKeys("123456789");	
+		driver.findElement(By.xpath("//input[@id='passwordImage']")).sendKeys("test@123");	
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@id='loginSubmit']")).click();	
 		Thread.sleep(3000);
@@ -154,9 +154,9 @@ public class TestSteps {
 
 		// Rep
 
-		driver.findElement(By.xpath("//input[@id='userImage']")).sendKeys("QASales@gmail.com");	
+		driver.findElement(By.xpath("//input[@id='userImage']")).sendKeys("saurabh.kumar@sia-digital.com");	
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//input[@id='passwordImage']")).sendKeys("123456789");	
+		driver.findElement(By.xpath("//input[@id='passwordImage']")).sendKeys("Saurabh@12345");	
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@id='loginSubmit']")).click();	
 		Thread.sleep(3000);
@@ -175,80 +175,80 @@ public class TestSteps {
 
 	@Then("^UI/UX wise proper testing$")
 	public void ui_UX_wise_proper_testing() throws Throwable {
-		System.out.println("Have to check Manually");
+		System.out.println("UI/UX wise proper testing - Have to check Manually");
 	}
 
 	@Then("^Scores colour should change according to the CMS functioning$")
 	public void scores_colour_should_change_according_to_the_CMS_functioning() throws Throwable {
-		System.out.println("Have to check Manually");
+		System.out.println("Scores colour should change according to the CMS functioning - Have to check Manually");
 	}
 
 	@Then("^Scores count should be there as per logic$")
 	public void scores_count_should_be_there_as_per_logic() throws Throwable {
-		System.out.println("Have to check Manually");
+		System.out.println("Scores count should be there as per logic - Have to check Manually");
 	}
 
 	@Then("^Language change should work perfectly$")
 	public void language_change_should_work_perfectly() throws Throwable {
-		System.out.println("Have to check Manually");
+		System.out.println("Language change should work perfectly - Have to check Manually");
 	}
 	@Then("^Forms icon and colour should be test$")
 	public void forms_icon_and_colour_should_be_test() throws Throwable {
-		System.out.println("Have to check Manually");
+		System.out.println("Forms icon and colour should be test - Have to check Manually");
 	}
 
 	@Then("^Regular QC of active clients$")
 	public void regular_QC_of_active_clients() throws Throwable {
-
+		System.out.println("Regular QC of active clients - Will create seprate QC for all users");
 	}
 
 	@Then("^Data Dump quality check \\(Data that we download from export button\\)$")
 	public void data_Dump_quality_check_Data_that_we_download_from_export_button() throws Throwable {
-		System.out.println("Have to check Manually");
+		System.out.println("Data Dump quality check (Data that we download from export button - Have to check Manually");
 	}
 
 	@Then("^The Dashboard icons/buttons should redirect properly\\.$")
 	public void the_Dashboard_icons_buttons_should_redirect_properly() throws Throwable {
-		System.out.println("Checking in SLSM/FLSM Steps");
+		System.out.println("The Dashboard icons/buttons should redirect properly - Checked in SLSM/FLSM Steps");
 	}
 
 	@Then("^Redirect MAT button\\.$")
 	public void redirect_MAT_button() throws Throwable {
-		System.out.println("Checking in SLSM/FLSM Steps");
+		System.out.println("Redirect MAT button - Checked in SLSM/FLSM Steps");
 	}
 
 	@Then("^Redirect YTD button$")
 	public void redirect_YTD_button() throws Throwable {
-		System.out.println("Checking in SLSM/FLSM Steps");
+		System.out.println("Redirect YTD button - Checking in SLSM/FLSM Steps");
 	}
 
 	@Then("^Form Icons - on click should go to related form whether it's scoring or coaching form\\.$")
 	public void form_Icons_on_click_should_go_to_related_form_whether_it_s_scoring_or_coaching_form() throws Throwable {
-		System.out.println("Checking in SLSM/FLSM Steps");
+		System.out.println("Form Icons - on click should go to related form whether it's scoring or coaching form - Checked in SLSM/FLSM Steps");
 	}
 
 	@Then("^Export Buttons should download the data accordingly\\.$")
 	public void export_Buttons_should_download_the_data_accordingly() throws Throwable {
-		System.out.println("Checking in SLSM/FLSM Steps");
+		System.out.println("Export Buttons should download the data accordingly - Checked in SLSM/FLSM Steps");
 	}
 
 	@Then("^NEXT and PREVIOUS buttons in standard report\\.$")
 	public void next_and_PREVIOUS_buttons_in_standard_report() throws Throwable {
-		System.out.println("Checking in SLSM/FLSM Steps");
+		System.out.println("NEXT and PREVIOUS buttons in standard report - Checked in SLSM/FLSM Steps");
 	}
 
 	@Then("^Managers/Coach Names should appear according to filter on SLSM\\.$")
 	public void managers_Coach_Names_should_appear_according_to_filter_on_SLSM() throws Throwable {
-		System.out.println("Checking in SLSM/FLSM Steps");
+		System.out.println("Managers/Coach Names should appear according to filter on SLSM - Checked in SLSM/FLSM Steps");
 	}
 
 	// Menu Item: Tabs/Modules for SLSM
 
 	@Then("^To check menu items-Tabs for SLSM\\. It should work properly\\.$")
 	public void to_check_menu_items_Tabs_for_SLSM_It_should_work_properly() throws Throwable {
-		driver.findElement(By.xpath("//input[@id='userImage']")).sendKeys("SalesManager@gmail.com");	
+		driver.findElement(By.xpath("//input[@id='userImage']")).sendKeys("nitika.sethi@sia-digital.com");	
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//input[@id='passwordImage']")).sendKeys("123456789");	
+		driver.findElement(By.xpath("//input[@id='passwordImage']")).sendKeys("test@12");	
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@id='loginSubmit']")).click();	
 		Thread.sleep(3000);
@@ -498,47 +498,36 @@ public class TestSteps {
 	@Then("^To check menu items-Tabs for FLSM\\. It should work properly\\.$")
 	public void to_check_menu_items_Tabs_for_FLSM_It_should_work_properly() throws Throwable {
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//input[@id='userImage']")).sendKeys("AnalyticManager@gmail.com");	
-		driver.findElement(By.xpath("//input[@id='passwordImage']")).sendKeys("123456789");		
+		driver.findElement(By.xpath("//input[@id='userImage']")).sendKeys("ritick.gautam@sia.com");	
+		driver.findElement(By.xpath("//input[@id='passwordImage']")).sendKeys("test@12");		
 		driver.findElement(By.xpath("//input[@id='loginSubmit']")).click();
-		Thread.sleep(4000);
-		JavascriptExecutor js = (JavascriptExecutor)driver; 
-
-		WebElement a=driver.findElement(By.xpath("//img[starts-with(@id,'SelectedDiv') and contains(@src,'sia_logo.png')]"));
-
-		js.executeScript("arguments[0].scrollIntoView();",a );
-		a.click();
-		Thread.sleep(4000);
-//	
+//		Thread.sleep(4000);
+//		JavascriptExecutor js = (JavascriptExecutor)driver; 
 //
-//		WebDriverWait wait = new WebDriverWait(driver, 15);
+//		WebElement a=driver.findElement(By.xpath("//img[starts-with(@id,'SelectedDiv') and contains(@src,'sia_logo.png')]"));
 //
-//		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='FormTypeIdModal0']//p[contains(text(),'All Data')]"))).click();
-//
-//		Thread.sleep(2000);
-
-
-		driver.findElement(By.xpath("//img[@id='new_coachin_form_gray_icon']")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//img[@id='new_scoring_form_gray_icon']")).click();
-		Thread.sleep(2000);
+//		js.executeScript("arguments[0].scrollIntoView();",a );
+//		a.click();
+		
 	}
 	@Then("^check new coaching form$")
 	public void check_new_coaching_form() throws Throwable {
+		Thread.sleep(5000);
 		driver.findElement(By.xpath("//img[@id='new_coachin_form_gray_icon']")).click();
-		Thread.sleep(2000);
+		
 
 	}
 
 	@Then("^check Scoring form$")
 	public void check_Scoring_form() throws Throwable {
-		driver.findElement(By.xpath("//img[@id='new_scoring_form_gray_icon']")).click();
 		Thread.sleep(2000);
+		driver.findElement(By.xpath("//img[@id='new_scoring_form_gray_icon']")).click();
+	
 	}
 
 	@Then("^check standard report tab with all graph & Sales Call type options and MAT & YTD$")
 	public void check_standard_report_tab_with_all_graph_Sales_Call_type_options_and_MAT_YTD() throws Throwable {
-
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//img[@id='StandardReport_gray_icon']")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//button[normalize-space()='MAT']")).click();
@@ -812,9 +801,9 @@ public class TestSteps {
 	public void to_check_menu_items_Modules_for_Rep_It_should_work_properly() throws Throwable {
 
 		Thread.sleep(3000);
-		driver.findElement(By.xpath("//input[@id='userImage']")).sendKeys("QASales@gmail.com");	
+		driver.findElement(By.xpath("//input[@id='userImage']")).sendKeys("saurabh.kumar@sia-digital.com");	
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//input[@id='passwordImage']")).sendKeys("123456789");	
+		driver.findElement(By.xpath("//input[@id='passwordImage']")).sendKeys("Saurabh@12345");	
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@id='loginSubmit']")).click();	
 		Thread.sleep(3000);
@@ -879,77 +868,6 @@ public class TestSteps {
 	public void check_Self_Assessement_form_fill_the_form_And_Add_comment() throws Throwable {
 		driver.findElement(By.xpath("//img[@id='new_scoring_form_gray_icon']")).click();
 		Thread.sleep(2000);
-		//		java.util.Date todayDate= new java.util.Date();
-		//		Instant instant=todayDate.toInstant();
-		//		String date =instant.toString();
-		//		driver.findElement(By.xpath("//input[@id='txtdateSelfAssessmentform']")).sendKeys(date);
-		//		Thread.sleep(1000);
-
-		driver.findElement(By.xpath("//tr[@id='2577']//div[@title='Option_Test_4']")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//tr[@id='2578']//div[@title='Option_Test_4']")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//tr[@id='2579']//div[@title='Option_Test_4']")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//tr[@id='2580']//div[@title='Option_Test_4']")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//tr[@id='2581']//div[@title='Option_Test_4']")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//tr[@id='2582']//div[@title='Option_Test_4']")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//tr[@id='2583']//div[@title='Option_Test_4']")).click();
-		Thread.sleep(2000);
-
-		WebElement ChooseOption1 = driver.findElement(By.xpath("//tr[@id='2684']//select[contains(@data-bind,'value: $data.DropDownSelectedVal')]"));
-		Select select1 = new Select(ChooseOption1);
-		select1.selectByVisibleText("Option_Test_3");
-		Thread.sleep(1000);
-
-		WebElement ChooseOption2 = driver.findElement(By.xpath("//tr[@id='2685']//select[contains(@data-bind,'value: $data.DropDownSelectedVal')]"));
-		Select select2 = new Select(ChooseOption2);
-		select2.selectByVisibleText("Option_Test_3");
-		Thread.sleep(1000);
-
-		WebElement ChooseOption3 = driver.findElement(By.xpath("//tr[@id='2686']//select[contains(@data-bind,'value: $data.DropDownSelectedVal')]"));
-		Select select3 = new Select(ChooseOption3);
-		select3.selectByVisibleText("Option_Test_3");
-		Thread.sleep(1000);
-
-		WebElement ChooseOption4 = driver.findElement(By.xpath("//tr[@id='2689']//select[contains(@data-bind,'value: $data.DropDownSelectedVal')]"));
-		Select select4 = new Select(ChooseOption4);
-		select4.selectByIndex(3);
-		Thread.sleep(1000);
-
-		WebElement ChooseOption5 = driver.findElement(By.xpath("//tr[@id='2688']//select[contains(@data-bind,'value: $data.DropDownSelectedVal')]"));
-		Select select5 = new Select(ChooseOption5);
-		select5.selectByVisibleText("Option_Test_4");
-		Thread.sleep(1000);
-
-		WebElement ChooseOption6 = driver.findElement(By.xpath("//tr[@id='2687']//select[contains(@data-bind,'value: $data.DropDownSelectedVal')]"));
-		Select select6 = new Select(ChooseOption6);
-		select6.selectByVisibleText("Option_Test_3");
-
-		//		Thread.sleep(2000);
-		//		driver.findElement(By.xpath("//tbody/tr[@id='2790']/td[4]/div[1]/input[1]")).click();
-		//		Thread.sleep(2000);
-		//		driver.findElement(By.xpath("//tbody/tr[@id='2791']/td[4]/div[1]/input[1]")).click();
-		//		Thread.sleep(2000);
-		//		driver.findElement(By.xpath("//tbody/tr[@id='2792']/td[4]/div[1]/input[1]")).click();
-		//		Thread.sleep(2000);
-		//		driver.findElement(By.xpath("//tbody/tr[@id='2793']/td[4]/div[1]/input[1]")).click();
-		//		Thread.sleep(2000);
-		//		
-		//		driver.findElement(By.xpath("//tbody/tr[@id='2894']/td[4]/label[1]/div[1]")).click();
-		//		Thread.sleep(2000);
-		//		driver.findElement(By.xpath("//tbody/tr[@id='2895']/td[4]/label[1]/div[1]")).click();
-		//		Thread.sleep(2000);
-		//		driver.findElement(By.xpath("//tbody/tr[@id='2896']/td[4]/label[1]/div[1]")).click();
-		//		Thread.sleep(2000);
-		//		driver.findElement(By.xpath("//tbody/tr[@id='2897']/td[4]/label[1]/div[1]")).click();
-		//		Thread.sleep(2000);
-		//driver.findElement(By.xpath("//button[@class='pull-right submit marginTop-1']")).click();
-
-		//driver.findElements(By.xpath("//span[@id='notificationBox']"));
 	}
 
 	@Then("^Check Graph ploter and click on download excel icon$")
@@ -980,7 +898,9 @@ public class TestSteps {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//textarea[@id='mytextarea']")).sendKeys("Nice Development");
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//button[@type='submit']")).click();
-
+		//driver.findElement(By.xpath("//button[@type='submit']")).click();
+		driver.findElement(By.xpath("//*[@id=\"Feedback_page\"]/div/div/div/div/div/div[1]/button")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//*[@id=\"myFirstNavigation\"]/ul[1]/li[6]/a")).click();
 	}
 }

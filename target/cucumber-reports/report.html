@@ -39,7 +39,6 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -53,7 +52,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jun 22, 2021 04:50:44 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Jun 28, 2021 12:23:27 PM</span>
 				</a>
 			</li>
 			<li>
@@ -79,8 +78,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
-						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -93,7 +90,7 @@
 					<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@step1</a></li>
+					<li><a href='#'>@step3</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -141,10 +138,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -156,10 +153,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -171,10 +168,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='10%'><span class='strong'>1</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>8</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='10%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='80%'>8</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -188,126 +185,85 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>QC check list</span>
-						<span class='test-time'>Jun 22, 2021 04:50:44 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Jun 28, 2021 12:23:27 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
-<div class='scenario node' test-id='2' status='fail'>
+<div class='scenario node' test-id='2' status='pass'>
 	<div class='category-list'>
-		<span class='category label white-text'>@step1</span>
+		<span class='category label white-text'>@step3</span>
 	</div>
-	<span class='duration right label'>0h 1m 15s+847ms</span>
+	<span class='duration right label'>0h 4m 3s+582ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
-		<span class="desc-text">Basic QC List</span>
+		<span class="desc-text">Verify all section of First Level Sales Manager(FLSM) Dashboard</span>
 	</div>
 	<ul class='steps'>
 		<li test-id='3' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
-			<span class="bdd-step-name">Then SSL Certificate Expiry</span>
+			<span class="bdd-step-name">Then To check menu items-Tabs for FLSM. It should work properly.</span>
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='4' class='node then fail' status='fail'>
+		<li test-id='4' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
-			<span class="bdd-step-name">Then Forgot Password module for email functioning related.</span>
-				<div class='pre'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@aria-label='Refresh']//div[@class='asa']"}
-  (Session info: chrome=91.0.4472.106)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.0.0-beta-3', revision: '5d108f9a67'
-System info: host: 'LAKHAN', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [31e8991cd01c84acc7fea92268979e7d, findElement {using=xpath, value=//div[@aria-label='Refresh']//div[@class='asa']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.106, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\lakhan\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52078}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52078/devtoo..., se:cdpVersion: 91.0.4472.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 31e8991cd01c84acc7fea92268979e7d
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:198)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:619)
-	at org.openqa.selenium.remote.RemoteWebDriver$Mechanism$2.findElement(RemoteWebDriver.java:1258)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:386)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-	at Steps.TestSteps.forgot_Password_module_for_email_functioning_related(TestSteps.java:100)
-	at ✽.Then Forgot Password module for email functioning related.(./Features/QC_CheckList.feature:7)
-</pre></div>
+			<span class="bdd-step-name">Then check standard report tab with all graph & Sales Call type options and MAT & YTD</span>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='5' class='node then skip' status='skip'>
+		<li test-id='5' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
-			<span class="bdd-step-name">Then Login through multiple users like REP/FLSM/SLSM/ADMIN</span>
-				<div class='pre'>skipped</div>
+			<span class="bdd-step-name">Then check standard report tab with all graph & Transactional Call type options and MAT & YTD</span>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='6' class='node then skip' status='skip'>
+		<li test-id='6' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
-			<span class="bdd-step-name">Then UI/UX wise proper testing</span>
-				<div class='pre'>skipped</div>
+			<span class="bdd-step-name">Then check Graph ploter and generate report</span>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='7' class='node then skip' status='skip'>
+		<li test-id='7' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
-			<span class="bdd-step-name">Then Scores colour should change according to the CMS functioning</span>
-				<div class='pre'>skipped</div>
+			<span class="bdd-step-name">Then check LRC and downloadable and user guide</span>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='8' class='node then skip' status='skip'>
+		<li test-id='8' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
-			<span class="bdd-step-name">Then Scores count should be there as per logic</span>
-				<div class='pre'>skipped</div>
+			<span class="bdd-step-name">Then Check Sales Rep Performance Tab.</span>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='9' class='node then skip' status='skip'>
+		<li test-id='9' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
-			<span class="bdd-step-name">Then Language change should work perfectly</span>
-				<div class='pre'>skipped</div>
+			<span class="bdd-step-name">Then Check Manager/Coach Summary Tab.</span>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='10' class='node then skip' status='skip'>
+		<li test-id='10' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
-			<span class="bdd-step-name">Then Forms icon and colour should be test</span>
-				<div class='pre'>skipped</div>
-			
-		</li>
-		<li test-id='11' class='node then skip' status='skip'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then Regular QC of active clients</span>
-				<div class='pre'>skipped</div>
-			
-		</li>
-		<li test-id='12' class='node then skip' status='skip'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then Data Dump quality check (Data that we download from export button)</span>
-				<div class='pre'>skipped</div>
+			<span class="bdd-step-name">Then Check Sales Team Performance Tab.</span>
+				<div class='pre'>passed</div>
 			
 		</li>
 	</ul>
@@ -366,15 +322,15 @@ Session ID: 31e8991cd01c84acc7fea92268979e7d
 				
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@step1</span>
+						<span class='category-name'>@step3</span>
 						<span class='category-status right'>
-							<span class='label fail'>1</span>
+							<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 					
@@ -389,9 +345,9 @@ Session ID: 31e8991cd01c84acc7fea92268979e7d
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jun 22, 2021 04:50:44 PM</td>
-										<td class='linked' test-id='2'>QC check list.Basic QC List</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td>Jun 28, 2021 12:23:27 PM</td>
+										<td class='linked' test-id='2'>QC check list.Verify all section of First Level Sales Manager(FLSM) Dashboard</td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -410,92 +366,6 @@ Session ID: 31e8991cd01c84acc7fea92268979e7d
 	</div>
 </div>
 <!-- category view -->
-<div id='exception-view' class='view hide'>
-
-    <section id='controls'>
-        <div class='controls grey lighten-4'>
-            <!-- search -->
-            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
-                <a href="#" class='search-div'>
-                    <i class='material-icons'>search</i> Search
-                </a>
-
-                <div class='input-field left hide'>
-                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-                </div>
-
-            </div>
-            <!-- search -->
-        </div>
-    </section>
-
-    <div class='subview-left left'>
-
-        <div class='view-summary'>
-            <h5>Exceptions</h3>
-                <ul id='exception-collection' class='exception-collection'>
-
-                        <li class='exception displayed active'>
-                            <div class='exception-heading'>
-                                <span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-                            </div>
-                            <div class='exception-content hide'>
-                                <div class='exception-tests'>
-                                    <table class='bordered table-results'>
-                                        <thead>
-                                        <tr>
-                                            <th>Timestamp</th>
-                                            <th>TestName</th>
-                                            <th>Status</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                                    <tr>
-                                                        <td>Jun 22, 2021 04:51:23 PM</td>
-                                                        <td class='linked' test-id='4'>QC check list.Basic QC List.Then Forgot Password module for email functioning related.</td>
-                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@aria-label='Refresh']//div[@class='asa']"}
-  (Session info: chrome=91.0.4472.106)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.0.0-beta-3', revision: '5d108f9a67'
-System info: host: 'LAKHAN', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [31e8991cd01c84acc7fea92268979e7d, findElement {using=xpath, value=//div[@aria-label='Refresh']//div[@class='asa']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.106, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\lakhan\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52078}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52078/devtoo..., se:cdpVersion: 91.0.4472.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 31e8991cd01c84acc7fea92268979e7d
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:198)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:619)
-	at org.openqa.selenium.remote.RemoteWebDriver$Mechanism$2.findElement(RemoteWebDriver.java:1258)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:386)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-	at Steps.TestSteps.forgot_Password_module_for_email_functioning_related(TestSteps.java:100)
-	at ✽.Then Forgot Password module for email functioning related.(./Features/QC_CheckList.feature:7)
-</pre></pre></td>
-                                                    </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </li>
-                </ul>
-        </div>
-    </div>
-
-    <div class='subview-right left'>
-        <div class='view-summary'>
-            <h5 class='exception-name'></h5>
-        </div>
-    </div>
-</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -517,25 +387,25 @@ Session ID: 31e8991cd01c84acc7fea92268979e7d
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>10</div>
+					<div class='panel-lead'>8</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jun 22, 2021 04:50:44 PM</div>
+					<div class='panel-lead'>Jun 28, 2021 12:23:27 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jun 22, 2021 04:52:01 PM</div>
+			 		<div class='panel-lead'>Jun 28, 2021 12:27:31 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>76,807ms</div>
+					<div class='panel-lead'>244,085ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -551,12 +421,12 @@ Session ID: 31e8991cd01c84acc7fea92268979e7d
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@step1</td>
-							<td>0</td>
+							<td>@step3</td>
 							<td>1</td>
 							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 					</table>
@@ -572,31 +442,31 @@ Session ID: 31e8991cd01c84acc7fea92268979e7d
 
 		<script>
 			var statusGroup = {
-				passParent: 0,
-				failParent: 1,
+				passParent: 1,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
+				exceptionsParent: 0,
 				
-				passChild: 0,
-				failChild: 1,
+				passChild: 1,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 1,
+				exceptionsChild: 0,
 				
-				passGrandChild: 1,
-				failGrandChild: 1,
+				passGrandChild: 8,
+				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 8,
+				skipGrandChild: 0,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 9,
+				exceptionsGrandChild: 0,
 			};
 		</script>
 		

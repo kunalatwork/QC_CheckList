@@ -13,19 +13,10 @@ Scenario: Basic QC List
     Then Forms icon and colour should be test
 	Then Regular QC of active clients
 	Then Data Dump quality check (Data that we download from export button)
+
 	
 @step2
-Scenario: Dashboard Icons/Buttons
-	Then The Dashboard icons/buttons should redirect properly.
-	Then Redirect MAT button.
-	Then Redirect YTD button
-	Then Form Icons - on click should go to related form whether it's scoring or coaching form.
-	Then Export Buttons should download the data accordingly.
-	Then NEXT and PREVIOUS buttons in standard report.
-	Then Managers/Coach Names should appear according to filter on SLSM.
-	
-@step3	
-Scenario: Menu Item: Tabs/Modules for SLSM
+Scenario: Verify all section of Second Level Sales Manager(SLSM) Dashboard
     Then To check menu items-Tabs for SLSM. It should work properly.
     Then check new coaching form of SLSM
     Then check Scoring form of SLSM
@@ -42,8 +33,8 @@ Scenario: Menu Item: Tabs/Modules for SLSM
 	Then Check CFC Tab.
 	Then Check WOW Tab.
 	
-@step4	
-Scenario: Menu Item: Tabs/Modules for FLSM
+@step3
+Scenario: Verify all section of First Level Sales Manager(FLSM) Dashboard
 	Then To check menu items-Tabs for FLSM. It should work properly.
 	Then check standard report tab with all graph & Sales Call type options and MAT & YTD
 	Then check standard report tab with all graph & Transactional Call type options and MAT & YTD
@@ -53,8 +44,8 @@ Scenario: Menu Item: Tabs/Modules for FLSM
 	Then Check Manager/Coach Summary Tab.
 	Then Check Sales Team Performance Tab.
 	
-@step5	
-Scenario: Menu Item: Modules for SLSM/FLSM/REP
+@step4	
+Scenario: Verify all section of Representative Dashboard
 	Then To check menu items-Modules for Rep. It should work properly.
 	Then Check Dashboard Module.
 	Then check change password

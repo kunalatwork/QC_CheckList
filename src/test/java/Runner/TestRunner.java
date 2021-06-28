@@ -18,7 +18,7 @@ import cucumber.api.junit.Cucumber;
                   plugin = {"html:Reports/QC_CheckList-Report",
                 		  "rerun:failedTest/FailedCase.txt",
                 		  "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"},
-                  tags= {"@step1"}
+                  tags= {"@step3"}
 		        )
 
 public class TestRunner {
