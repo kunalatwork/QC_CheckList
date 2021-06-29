@@ -19,9 +19,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import cucumber.api.java.Before;
-import cucumber.api.java.en.Then;
-
+import io.cucumber.java.Before;
+import io.cucumber.java.en.Then;
 public class TestSteps {
 
 	public WebDriver driver;

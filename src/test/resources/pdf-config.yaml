@@ -1,0 +1,63 @@
+passColor: 307e62
+failColor: fb0909
+skipColor: ffe801
+displayFeature: true
+displayScenario: true
+displayDetailed: true
+
+summaryConfig:
+   title: Advance QC Report
+   dataBackgroundColor: FFFFFF
+   titleColor: 000000
+   dateColor: FFFFFF
+   #startTimeColor: 000000
+   #endTimeColor: 000000
+   #durationColor: 000000
+   dial:
+      featureRanges: 60 95
+      scenarioRanges: 70 90
+      stepRanges: 75 85
+      badColor: fb0909
+      averageColor: ffc101
+      goodColor: 307e62
+   
+featureConfig:
+   #itemcount: 10
+   totalColor: FF0000
+   durationColor: FF0000
+   
+scenarioConfig:
+   #itemcount: 12
+   totalColor: FF0000
+   durationColor: FF0000
+   
+detailedFeatureConfig:
+   featureNameColor: FF0000
+   startEndTimeColor: 000000
+   tagColor: 404040
+   dataHeaderColor: 000000
+   dataBackgroundColor: F4F4F4
+   totalColor: 0000FF
+   durationColor: 000000
+   durationBackgroundColor: 404040   
+   
+detailedScenarioConfig:
+   featureNameColor: C0C0C0
+   scenarioNameColor: 000000   
+   startEndTimeColor: FFFFFF
+   tagColor: 404040
+   dataHeaderColor: 000000
+   dataBackgroundColor: F4F4F4
+   totalColor: 0000FF
+   durationColor: 000000
+   durationBackgroundColor: F4F4F4
+   stepChartBarColor: 7f32a8
+   
+detailedStepHookConfig:
+   stepTextColor: 000000
+   hookTextColor: 00FF00
+   durationColor: FF0000
+   errorMsgColor: 000000
+   logMsgColor: 000000
+   #mediaMsgColor: FF0000
+   

@@ -14,8 +14,8 @@ Scenario: Basic QC List
 	Then Regular QC of active clients
 	Then Data Dump quality check (Data that we download from export button)
 
-	
-@step2
+
+@step1
 Scenario: Verify all section of Second Level Sales Manager(SLSM) Dashboard
     Then To check menu items-Tabs for SLSM. It should work properly.
     Then check new coaching form of SLSM
@@ -33,7 +33,7 @@ Scenario: Verify all section of Second Level Sales Manager(SLSM) Dashboard
 	Then Check CFC Tab.
 	Then Check WOW Tab.
 	
-@step3
+@step1
 Scenario: Verify all section of First Level Sales Manager(FLSM) Dashboard
 	Then To check menu items-Tabs for FLSM. It should work properly.
 	Then check standard report tab with all graph & Sales Call type options and MAT & YTD
@@ -44,7 +44,7 @@ Scenario: Verify all section of First Level Sales Manager(FLSM) Dashboard
 	Then Check Manager/Coach Summary Tab.
 	Then Check Sales Team Performance Tab.
 	
-@step4	
+@step1
 Scenario: Verify all section of Representative Dashboard
 	Then To check menu items-Modules for Rep. It should work properly.
 	Then Check Dashboard Module.
